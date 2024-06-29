@@ -418,82 +418,81 @@
     
 
                 <!-- Team -->
-    <section class="bg-light page-section" id="organizers">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading text-uppercase">WORKSHOP CHAIRS</h2>
-                    <hr class="divider my-4" />
-                </div>
+<section class="bg-light page-section" id="organizers">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">WORKSHOP CHAIRS</h2>
+                <hr class="divider my-4" />
             </div>
-
-
-
-
-            <style>
-                .left {
-                    float: left;
-                    width: 50%;
-                    height: 400px;
-
-                }
-
-                .right {
-                    float: right;
-                    width: 50%;
-                    height: 400px;
-
-                }
-            </style>
-
-            <div class="left" data-animation-delay="200">
-                <br /><br />
-                <center><a href="https://heitorgomes.com/" target="blank"><img
-                            class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150"
-                            src="img/heitor_headphoto.jpg" alt=""></a></center>
-                <br />
-                <h4 class="section-heading">
-                    <center><a href="https://heitorgomes.com/" target="blank">
-                            <font color="Black">Dr. Heitor Murilo Gomes </font>
-                        </a></center>
-                </h4>
-
-            </div>
-
-            <div class="left" data-animation-delay="200">
-                <br /><br />
-                <center><a href="https://www.fau.edu/engineering/directory/faculty/zhu/" target="blank"><img
-                            class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150"
-                            src="img/Xingquan Zhu.png" alt=""></a></center>
-                <br />
-                <h4 class="section-heading">
-                    <center><a href="https://www.fau.edu/engineering/directory/faculty/zhu/" target="blank">
-                            <font color="Black">Dr. Xingquan Zhu </font>
-                        </a></center>
-                </h4>
-
-            </div>
-
-            <div class="right" data-animation-delay="200">
-                <br /><br />
-                <center><a href="https://www.lions.odu.edu/~y1he/index.html" target="blank"><img
-                            class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150"
-                            src="img/Yi He_v2.png" alt=""></a></center>
-                <br />
-                <h4 class="section-heading">
-                    <center><a href="https://www.lions.odu.edu/~y1he/index.html" target="blank">
-                            <font color="Black">Dr. Yi He </font>
-                        </a></center>
-                </h4>
-
-            </div>
-
-
-
-
         </div>
-    </section>
 
+        <style>
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .flex-item {
+                width: 30%; /* 每行最多显示三个 */
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .flex-item img {
+                border-radius: 50%;
+                height: 150px;
+                width: 150px;
+            }
+
+            .flex-item h4 {
+                margin-top: 15px;
+            }
+        </style>
+
+        <div class="flex-container">
+            <div class="flex-item" data-animation-delay="200">
+                <br /><br />
+                <center>
+                    <a href="https://heitorgomes.com/" target="blank">
+                        <img class="img-responsive img-rounded" src="img/heitor_headphoto.jpg" alt="">
+                    </a>
+                </center>
+                <br />
+                <h4 class="section-heading">
+                    <center><a href="https://heitorgomes.com/" target="blank"><font color="Black">Dr. Heitor Murilo Gomes </font></a></center>
+                </h4>
+            </div>
+
+            <div class="flex-item" data-animation-delay="200">
+                <br /><br />
+                <center>
+                    <a href="https://www.fau.edu/engineering/directory/faculty/zhu/" target="blank">
+                        <img class="img-responsive img-rounded" src="img/Xingquan Zhu.png" alt="">
+                    </a>
+                </center>
+                <br />
+                <h4 class="section-heading">
+                    <center><a href="https://www.fau.edu/engineering/directory/faculty/zhu/" target="blank"><font color="Black">Dr. Xingquan Zhu </font></a></center>
+                </h4>
+            </div>
+
+            <div class="flex-item" data-animation-delay="200">
+                <br /><br />
+                <center>
+                    <a href="https://www.lions.odu.edu/~y1he/index.html" target="blank">
+                        <img class="img-responsive img-rounded" src="img/Yi He_v2.png" alt="">
+                    </a>
+                </center>
+                <br />
+                <h4 class="section-heading">
+                    <center><a href="https://www.lions.odu.edu/~y1he/index.html" target="blank"><font color="Black">Dr. Yi He </font></a></center>
+                </h4>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
