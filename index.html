@@ -435,9 +435,6 @@
             }
 
             .flex-item {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
                 width: 30%; /* 每行最多显示三个 */
                 margin-bottom: 20px;
                 text-align: center;
@@ -445,8 +442,9 @@
 
             .flex-item img {
                 border-radius: 50%;
-                max-width: 150px;
-                height: auto;
+                width: 150px;
+                height: 150px;
+                object-fit: cover; /* 保持图片比例并裁剪 */
             }
 
             .flex-item h4 {
@@ -491,16 +489,6 @@
         </div>
     </div>
 </section>
-
-
-
-
-
-
-
-
-
-
 
 
 
