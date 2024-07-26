@@ -505,27 +505,25 @@
             </div>
         </div>
         <style>
-            .top-row, .bottom-row {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                justify-items: center;
+                gap: 20px;
                 margin-bottom: 20px;
             }
 
-            .top-row {
-                gap: 20px;
-            }
-
             .bottom-row {
+                display: flex;
+                justify-content: center;
                 gap: 20px;
             }
 
-            .person {
+            .person, .bottom-item {
                 text-align: center;
-                flex: 1;
             }
 
-            .person img {
+            .person img, .bottom-item img {
                 border-radius: 50%;
                 height: 150px;
                 width: 150px;
@@ -535,9 +533,14 @@
                 text-decoration: none;
                 color: black;
             }
+
+            /* Adjust the grid items for the last row */
+            .grid-container:last-child {
+                grid-template-columns: repeat(3, 1fr);
+            }
         </style>
 
-        <div class="top-row">
+        <div class="grid-container">
             <div class="person" data-animation-delay="200">
                 <a href="https://personal.ntu.edu.sg/xlli/" target="blank"><img src="img/Xiaoli Li.png" alt=""></a>
                 <h4 class="section-heading">
@@ -567,14 +570,14 @@
             </div>
         </div>
 
-        <div class="person" data-animation-delay="200">
-            <a href="https://www.cs.emory.edu/~jyang71/" target="blank"><img src="img/Carl Yang.png" alt=""></a>
-            <h4 class="section-heading">
-                <a href="https://www.cs.emory.edu/~jyang71/" target="blank">Carl Yang</a>
-            </h4>
-        </div>
+        <div class="grid-container">
+            <div class="person" data-animation-delay="200">
+                <a href="https://www.cs.emory.edu/~jyang71/" target="blank"><img src="img/Carl Yang.png" alt=""></a>
+                <h4 class="section-heading">
+                    <a href="https://www.cs.emory.edu/~jyang71/" target="blank">Carl Yang</a>
+                </h4>
+            </div>
 
-        <div class="bottom-row">
             <div class="person" data-animation-delay="200">
                 <a href="https://sites.google.com/site/rakinhaider/" target="blank"><img src="img/Chowdhury Mohammad Rakin Haider.png" alt=""></a>
                 <h4 class="section-heading">
@@ -582,15 +585,16 @@
                 </h4>
             </div>
 
-        <div class="person" data-animation-delay="200">
-            <a href="https://www.linkedin.com/in/christian-schreckenberger-898a7511a/" target="blank"><img src="img/chris.jpg" alt=""></a>
-            <h4 class="section-heading">
-                <a href="https://www.linkedin.com/in/christian-schreckenberger-898a7511a/" target="blank">Christian Schreckenberger</a>
-            </h4>
-        </div>
+            <div class="person" data-animation-delay="200">
+                <a href="https://www.linkedin.com/in/christian-schreckenberger-898a7511a/" target="blank"><img src="img/chris.jpg" alt=""></a>
+                <h4 class="section-heading">
+                    <a href="https://www.linkedin.com/in/christian-schreckenberger-898a7511a/" target="blank">Christian Schreckenberger</a>
+                </h4>
+            </div>
         </div>
     </div>
 </section>
+
 
 
 <section class="bg-light page-section" id="contacts">
