@@ -10175,4 +10175,25 @@ body {
     font-size: 1rem;
   }
 }
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 让头像两列显示 */
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .person img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .person h4 {
+    font-size: 0.95rem;
+  }
+}
+
 
