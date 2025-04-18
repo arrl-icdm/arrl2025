@@ -10157,33 +10157,16 @@ body {
     overflow-x: hidden;
   }
 
-  .flex-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .flex-item {
-    width: 90%;
-    max-width: 300px;
-  }
-
-  .masthead h1 {
-    font-size: 1.8rem;
-  }
-
-  .masthead p {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-
   .grid-container {
-    grid-template-columns: repeat(2, 1fr); /* 让头像两列显示 */
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    gap: 20px;
+  }
+
+  .person {
+    width: 100%;
+    text-align: center;
   }
 
   .person img {
@@ -10192,7 +10175,8 @@ body {
   }
 
   .person h4 {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    word-break: break-word;
   }
 }
 
