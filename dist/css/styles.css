@@ -10157,6 +10157,7 @@ body {
     overflow-x: hidden;
   }
 
+  /* Program Chairs 区域：头像布局优化 */
   .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -10178,6 +10179,20 @@ body {
     font-size: 0.9rem;
     word-break: break-word;
   }
+
+  /* 表格自动横向滚动容器 */
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-collapse: collapse;
+  }
+
+  table td, table th {
+    white-space: nowrap;
+  }
 }
+
 
 
