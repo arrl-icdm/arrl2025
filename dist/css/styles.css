@@ -10274,5 +10274,35 @@ body {
     font-size: 0.85rem;
   }
 }
+/* 针对日期表格的特定样式 */
+@media (max-width: 768px) {
+  #Dates .table {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+  
+  #Dates .table td {
+    padding: 8px;
+    vertical-align: middle;
+  }
+  
+  /* 确保日期列有合适的宽度 */
+  #Dates .table td:first-child {
+    width: 45%;
+    white-space: nowrap;
+  }
+  
+  /* 描述列可以换行 */
+  #Dates .table td:last-child {
+    width: 55%;
+    white-space: normal;
+  }
+  
+  /* 上标调整 */
+  #Dates .table sup {
+    font-size: 70%;
+    top: -0.5em;
+  }
+}
 
 
