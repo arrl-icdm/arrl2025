@@ -10072,15 +10072,22 @@ hr.light {
   }
 }
 
-header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.3) 0%, rgba(92, 77, 66, 0.3) 100%), url("../assets/img/dc.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+.masthead {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-image: url("../assets/img/bg-masthead.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
 header.masthead h1 {
   font-size: 2.25rem;
 }
