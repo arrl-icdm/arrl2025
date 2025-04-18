@@ -10074,12 +10074,18 @@ hr.light {
 
 .masthead {
   position: relative;
-  background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  width: 100vw;
+  min-height: 100vh;
+  background: url("../assets/img/dc.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
 
 
 
