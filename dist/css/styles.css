@@ -10149,50 +10149,130 @@ header.masthead h1 {
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
 }
+/* 移动端适配CSS修复 - 添加到styles.css文件末尾 */
+
+/* 全局溢出控制 */
 body {
   overflow-x: hidden;
+  max-width: 100%;
 }
+
+/* 表格响应式处理 */
 @media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  /* Program Chairs 区域：头像布局优化 */
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    gap: 20px;
-  }
-
-  .person {
-    width: 100%;
-    text-align: center;
-  }
-
-  .person img {
-    width: 120px;
-    height: 120px;
-  }
-
-  .person h4 {
-    font-size: 0.9rem;
-    word-break: break-word;
-  }
-
-  /* 表格自动横向滚动容器 */
-  table {
+  .table-responsive {
     display: block;
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    border-collapse: collapse;
   }
-
-  table td, table th {
-    white-space: nowrap;
+  
+  table {
+    width: 100%;
+    min-width: 500px; /* 确保表格有最小宽度，防止内容挤压 */
+  }
+  
+  table th, table td {
+    white-space: nowrap; /* 防止文本折行 */
+    padding: 8px 10px; /* 调整单元格内边距 */
+  }
+  
+  /* 调整表格容器，移除左侧margin */
+  .table-bordered {
+    margin-left: 0 !important;
+  }
+  
+  /* 适配表格容器 */
+  .col-lg-10.col-md-6.text-center {
+    width: 100%;
+    padding: 0;
   }
 }
 
+/* Program Chairs 人物照片和姓名布局优化 */
+@media (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important; /* 移动端显示两列 */
+    gap: 10px !important;
+  }
+  
+  .person img {
+    width: 100px !important; /* 减小图片大小 */
+    height: 100px !important;
+  }
+  
+  .person h4 {
+    font-size: 0.85rem !important; /* 缩小字体 */
+    word-break: break-word; /* 允许长名字换行 */
+    margin-top: 5px !important;
+  }
+  
+  /* 特别长的名字特殊处理 */
+  .person h4 a {
+    line-height: 1.2;
+    display: inline-block;
+  }
+}
+
+/* 联系信息区块响应式优化 */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+  }
+  
+  .contact-item {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+/* 主导航栏优化 */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0;
+  }
+}
+
+/* 主页面标题响应式优化 */
+@media (max-width: 768px) {
+  .masthead h1 {
+    font-size: 1.5rem !important;
+    line-height: 1.4;
+  }
+  
+  .masthead p {
+    font-size: 1rem !important;
+  }
+}
+
+/* 修复flex容器在移动端的问题 */
+@media (max-width: 768px) {
+  .flex-container {
+    justify-content: center;
+  }
+  
+  .flex-item {
+    flex: 0 0 45%;
+    max-width: 45%;
+    margin: 5px;
+  }
+  
+  .flex-item img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .flex-item h4 {
+    font-size: 0.85rem;
+  }
+}
 
 
